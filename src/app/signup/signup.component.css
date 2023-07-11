@@ -1,0 +1,53 @@
+mat-card{
+    max-width: 600px;
+    margin: 10rem auto;
+    text-align: center;
+    max-height: 600px;
+    background: url('/assets/loginbg.jpg');
+    background-size: cover ;
+    
+}
+
+.btn{
+    background: url('https://media.giphy.com/media/3ohhwEZqxzKbNUHzji/giphy.gif');
+    
+}
+
+.header{
+    text-align: center;
+}
+
+
+.full-width{
+    width:80%;
+}
+
+.forgot-password{
+    padding-left: 0%;
+}
+
+
+.aLink{
+    float: right;
+    padding-right: 60px;
+    text-decoration:none;
+}
+.email{
+ color: black ;
+}
+.password{
+    color: black;
+}
+
+.b{
+    padding-left: 408px;
+}
+.btn1{
+    padding-left: 420px;
+    
+}
+
+.bottom{
+    padding-left: 462px
+    ;
+}

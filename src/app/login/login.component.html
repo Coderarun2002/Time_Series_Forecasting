@@ -1,0 +1,54 @@
+
+  <mat-card>
+    <mat-card-content class="content" >
+      <div class="header">
+        <b style="font-size: 25px;">LOGIN HERE</b>
+      </div><br>
+      <form (ngSubmit)="onLogin()" name="loginForm" [formGroup]="loginForm">
+        <div class="emailInput">
+          <mat-form-field class="full-width" appearance="outline" width="10px" >
+            <mat-label><b class="email">E-mail</b></mat-label>
+            <input
+              formControlName="email"
+              matInput
+              placeholder="Enter Your Valid E-mail id" required 
+            />
+           
+            <mat-error *ngIf="!loginForm.controls['email'].valid">
+                <b>Please Enter your valid E-mail id</b>
+              </mat-error>
+          </mat-form-field>
+        </div>
+
+        <div>
+          <span>
+            <a class="text-link" class="aLink" routerLink="/auth/forgot-password">Forgot Password?</a>
+          </span>
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label><b class="password">Password</b></mat-label>
+            <input type="password"
+              formControlName="password"
+              matInput
+              placeholder="Enter Your Valid Password" [type]="hide ? 'password' : 'text'"  
+
+            />
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            
+        <mat-error *ngIf="!loginForm.controls['password'].valid">
+            <b>Please Enter Your valid Password</b>
+          </mat-error>
+        </mat-form-field>
+        </div>
+        
+        <button mat-flat-button color="primary" class="btn">Login</button><br>
+    
+          
+      </form>
+      <b style="color: rgb(241, 14, 14);" class="b">Don't have an account?</b>
+      <div class="btn1">
+      <button mat-flat-button color="primary" style="background: url('https://media.giphy.com/media/3ohhwEZqxzKbNUHzji/giphy.gif');" routerLink="signup">Signup</button><br>
+      </div>
+
+
+    </mat-card-content>
+  </mat-card>

@@ -1,0 +1,42 @@
+mat-card{
+    min-height: 100%;
+    padding: 1px 0rem;
+    text-align: center;
+    display: block;
+    background-size: cover ;
+
+}
+
+.chartjs-size-monitor,
+.chartjs-size-monitor-expand,
+.chartjs-size-monitor-shrink {
+  position: absolute;
+  direction: ltr;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+  visibility: hidden;
+  z-index: -1;
+}
+
+
+
+.mat1[_ngcontent-gor-c20] {
+  max-width: 600px;
+  margin: 0rem auto;
+  
+  max-height: 600px;
+  background-size: cover;
+}
+.metrics-container {
+  display: flex;
+  align-items: baseline;
+}
+label {
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
